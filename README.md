@@ -1,71 +1,72 @@
-📋 React ToDo App with Tailwind CSS
-A fully functional, responsive, and clean ToDo List app built using React and styled with Tailwind CSS.
-Manage your daily tasks efficiently with a modern and user-friendly interface.
+📝 To-Do List App (React + Tailwind CSS)
+A simple, responsive To-Do list app built using React and Tailwind CSS, with task persistence using localStorage.
+Users can add, delete, and toggle tasks as complete/incomplete, and all tasks remain saved even after refreshing the page.
 
-✨ Features
-✅ Add new tasks
+🚀 Features
+✅ Add new tasks.
 
-✅ Mark tasks as complete
+✅ Mark tasks as complete/incomplete.
 
-✅ Delete tasks
+✅ Delete tasks.
 
-✅ Persistent storage using LocalStorage
+✅ Persist tasks in localStorage.
 
-✅ Responsive UI with Tailwind CSS
+✅ Clean and minimal UI with Tailwind CSS.
 
-✅ React functional components with Hooks (useState, useRef, useEffect)
+✅ Reusable components and clean state management.
 
-🚀 Getting Started
-Clone the project
-bash
-Copy
-Edit
-git clone https://github.com/your-username/react-todo-app.git
-cd react-todo-app
-Install dependencies
-bash
-Copy
-Edit
-npm install
-Run the app locally
-bash
-Copy
-Edit
-npm start
-Open http://localhost:3000 in your browser.
+📸 Screenshots
+Home Screen	Task Completed
 
-📂 Project Structure
-css
+(Add your screenshots in a screenshots folder inside your repo)
+
+💻 Tech Stack
+React (useState, useEffect, useRef)
+
+Tailwind CSS
+
+localStorage API
+
+Clean component structure
+
+📂 Folder Structure
+cpp
 Copy
 Edit
 src/
 ├── assets/
-│   └── todo_icon.png
+│   ├── todo_icon.png
+│   ├── tick.png
+│   └── not_tick.png
+│   └── delete.png
 ├── components/
 │   ├── Todo.js
-│   ├── TodoList.js
-│   └── TodoItem.js
-├── App.js
-└── index.css
-🔧 Tech Stack
-React
+│   └── TodoList.js
+└── App.js
+⚙ Setup & Run Locally
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/todo-list-react.git
+cd todo-list-react
+npm install
+npm run dev
+🛠 How It Works
+The Todo component handles the app logic and UI.
 
-Tailwind CSS
+Tasks are stored in state (toDoTask) and updated using setToDoTask.
 
-🌟 Live Demo
-🚀 Live on Netlify / Vercel
+Changes are persisted automatically to localStorage via useEffect.
 
-💡 How It Works
-Add Task: Enter a task and click Add +.
+TodoList component renders individual tasks, and receives props for text, toggle, and delete actions.
 
-Mark Complete: Click on the task to toggle completion status.
+Users can:
 
-Delete Task: Click on the delete icon.
+Click the checkbox icon or text to toggle completion.
 
-Persistence: Tasks are saved in LocalStorage and persist across page reloads.
+Click the trash icon to delete.
 
-🙌 Contributing
-Contributions, feedback, and suggestions are welcome!
-Fork the repo, create a branch, and submit a pull request.
+Enter tasks using the input field and 'Add +' button.
+
 
 
